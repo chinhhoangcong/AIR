@@ -1,0 +1,76 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title AIR 
+        link(rel="stylesheet", href="./index.css")
+        script(src='https://kit.fontawesome.com/7ec1e10257.js' crossorigin='anonymous')
+        link(rel='stylesheet' href='https://kit.fontawesome.com/7ec1e10257.css' crossorigin='anonymous')
+        
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap", rel="stylesheet")
+
+    body 
+        header.global-header 
+            .containner
+                .logo
+                    a(href="#") 
+                        img(src="./img/Group.png", alt="")
+                .table-menu        
+                    ul
+                        - listMenu=["Giới Thiệu","Hạng phòng","Trải nghiệm","Khuyến mãi", "Sự kiện", "Bản đồ", "Liên hệ"]
+                        - for(x=0; x<listMenu.length;x++)
+                            li
+                                a(href="#" title="123") #{listMenu[x]}
+                .submenu 
+                    ul
+                        li
+                            i.fa-solid.fa-earth-americas                         
+                        li
+                            p VN                      
+                        li
+                            i.fa-solid.fa-magnifying-glass
+                .hotline   
+                    ul
+                        li
+                            i.fa-solid.fa-briefcase
+                        li 
+                            p lien he dat ve
+        footer
+            .footer-one 
+                .logo 
+                    a(href="#")
+                        img(src="./img/Group.png", alt="sad") 
+                .dis 
+                    h1 Amazing Island Resort
+                    p Thành phố du lịch sinh thái Sơn Tiên Quốc lộ 51 Khu phố 4, phường An Hòa, thành phố Biên Hòa, tỉnh Đồng Nai
+                .hotline 
+                    .contact
+                        h1 Hotline
+                        p 1900 633 087
+                    .media
+                        ul 
+                            li
+                                i.fa-brands.fa-facebook
+                        ul 
+                            li
+                                i.fa-brands.fa-tiktok
+                        ul 
+                            li
+                                i.fa-brands.fa-instagram      
+                .about
+                    .email 
+                        h1 Email
+                        p info@amazingislandresort.com.vn
+                    .website
+                        h1 Website
+                        p amazingislandresort.com.vn
+            .footer-two 
+                p © 2023 Amazing Island Resort. All rights reserved.
+                .liscen 
+                    p Điều khoản sử dụng
+                    p Chính sách bảo mật
+                    p Sitemap
+
